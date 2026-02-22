@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Andreea Sandu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #020617;
+            color: #f1f5f9;
+        }
+
+        .glass {
+            background: rgba(15,23,42,.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,.06);
+        }
+
+        .card-hover {
+            transition: all .35s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            border-color: #3b82f6;
+            box-shadow: 0 25px 60px rgba(37,99,235,.25);
+        }
+
+        .badge {
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            color: #93c5fd;
+            letter-spacing: .5px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg,#60a5fa,#22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="fixed w-full z-50 bg-slate-950/70 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="text-xl font-semibold tracking-wide">
+            Andreea<span class="text-blue-500">S.</span>
+        </div>
+
+        <div class="hidden md:flex gap-8 text-sm">
+            <a href="index.html" class="hover:text-blue-400">Home</a>
+            <a href="services.html" class="hover:text-blue-400">Services</a>
+            <a href="projects.html" class="text-blue-400">Projects</a>
+            <a href="contact.html" class="px-4 py-2 bg-blue-600 rounded-lg">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 text-center">
+    <h1 class="text-5xl font-extrabold mb-6">
+        Real <span class="gradient-text">Systems</span>, Not Just Code
+    </h1>
+
+    <p class="text-slate-400 max-w-2xl mx-auto">
+        A selection of Django applications designed to solve operational,
+        financial, and workflow problems through structured backend engineering.
+    </p>
+</section>
+
+<!-- PROJECT GRID -->
+<section class="pb-24">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+<!-- Emotional Planner -->
+<div class="glass p-8 rounded-2xl card-hover">
+    <h3 class="text-xl font-semibold mb-3">Emotional Planner</h3>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge">Django</span>
+        <span class="badge">Wellbeing UX</span>
+        <span class="badge">Personal Productivity</span>
+    </div>
+
+    <p class="text-slate-400 text-sm mb-6">
+        A mindful daily planning application focused on emotional balance,
+        reflection, and sustainable productivity instead of pressure-driven scheduling.
+    </p>
+
+    <a href="https://day-planner-e2sv.onrender.com" target="_blank" class="text-blue-400">Live Demo →</a>
+</div>
+
+<!-- MyBudget -->
+<div class="glass p-8 rounded-2xl card-hover">
+    <h3 class="text-xl font-semibold mb-3">MyBudget</h3>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge">Finance Logic</span>
+        <span class="badge">Charts</span>
+        <span class="badge">Data Tracking</span>
+    </div>
+
+    <p class="text-slate-400 text-sm mb-6">
+        Personal finance platform for tracking income, expenses, and monthly limits,
+        with analytical dashboards for understanding spending behavior.
+    </p>
+
+    <a href="https://my-budget-or3r.onrender.com/" target="_blank" class="text-blue-400">Live Demo →</a>
+</div>
+
+<!-- Ticketing Platform -->
+<div class="glass p-8 rounded-2xl card-hover">
+    <h3 class="text-xl font-semibold mb-3">Event Ticketing Platform</h3>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge">Stripe Integration</span>
+        <span class="badge">Payments</span>
+        <span class="badge">Event Management</span>
+    </div>
+
+    <p class="text-slate-400 text-sm mb-6">
+        Full event management solution allowing organizers to create events,
+        manage attendance, and sell tickets securely online.
+    </p>
+
+    <a href="https://platform-tickets.onrender.com" target="_blank" class="text-blue-400">Live Demo →</a>
+</div>
+
+<!-- Bookora -->
+<div class="glass p-8 rounded-2xl card-hover">
+    <h3 class="text-xl font-semibold mb-3">Bookora</h3>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge">Scheduling Engine</span>
+        <span class="badge">Automation</span>
+        <span class="badge">Client Management</span>
+    </div>
+
+    <p class="text-slate-400 text-sm mb-6">
+        Smart booking platform eliminating manual communication through
+        automated scheduling, confirmations, and service management.
+    </p>
+
+    <a href="https://bookora.onrender.com" target="_blank" class="text-blue-400">Live Demo →</a>
+</div>
+
+<!-- Django E-Commerce -->
+<div class="glass p-8 rounded-2xl card-hover">
+    <h3 class="text-xl font-semibold mb-3">Django E-Commerce Pro</h3>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge">Marketplace Logic</span>
+        <span class="badge">Coupons</span>
+        <span class="badge">Modular Architecture</span>
+    </div>
+
+    <p class="text-slate-400 text-sm mb-6">
+        A modular online marketplace supporting product variations,
+        cart systems, checkout flows, and admin/user dashboards.
+    </p>
+
+    <a href="https://django-ecommerce-c2s6.onrender.com" target="_blank" class="text-blue-400">Live Demo →</a>
+</div>
+
+<!-- BDD Framework -->
+<div class="glass p-8 rounded-2xl card-hover">
+    <h3 class="text-xl font-semibold mb-3">BDD Automation Framework</h3>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge">Testing Architecture</span>
+        <span class="badge">BDD</span>
+        <span class="badge">Page Object Model</span>
+    </div>
+
+    <p class="text-slate-400 text-sm mb-6">
+        Professional automation framework validating real user flows using
+        Behavior-Driven Development and scalable testing structure.
+    </p>
+
+    <a href="https://github.com/SanduAndreea22/BDD_AUTO_PY" target="_blank" class="text-blue-400">View Repository →</a>
+</div>
+
+</div>
+</section>
+
+<footer class="py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
+    © 2026 Andreea Sandu — Django Systems Development
+</footer>
+
+</body>
+</html>

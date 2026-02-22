@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems I Build | Andreea Sandu</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background:#020617;
+            color:#e2e8f0;
+        }
+
+        .glow {
+            position:absolute;
+            width:600px;
+            height:600px;
+            background:radial-gradient(circle,#2563eb55,transparent 70%);
+            filter:blur(90px);
+            z-index:0;
+        }
+
+        .glass {
+            background:rgba(15,23,42,.55);
+            backdrop-filter:blur(18px);
+            border:1px solid rgba(255,255,255,.05);
+        }
+
+        .title-gradient {
+            background:linear-gradient(90deg,#60a5fa,#22d3ee);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        .card {
+            transition:.4s ease;
+        }
+
+        .card:hover {
+            transform:translateY(-12px);
+            border-color:#3b82f6;
+            box-shadow:0 35px 80px rgba(37,99,235,.25);
+        }
+
+        .btn-main {
+            background:linear-gradient(135deg,#2563eb,#38bdf8);
+            transition:.3s;
+        }
+
+        .btn-main:hover {
+            transform:translateY(-2px);
+            box-shadow:0 0 35px rgba(56,189,248,.6);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+<div class="glow top-[-200px] left-[-200px]"></div>
+<div class="glow bottom-[-200px] right-[-200px]"></div>
+
+<!-- NAV -->
+<nav class="fixed w-full z-50 bg-slate-950/70 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="text-xl font-semibold">Andreea<span class="text-blue-500">S.</span></div>
+
+        <div class="hidden md:flex gap-8 text-sm">
+            <a href="index.html" class="hover:text-blue-400">Home</a>
+            <a href="services.html" class="text-blue-400">Services</a>
+            <a href="projects.html" class="hover:text-blue-400">Projects</a>
+            <a href="contact.html" class="btn-main px-4 py-2 rounded-lg text-white">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-36 pb-28 relative z-10 text-center max-w-4xl mx-auto px-6">
+    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8">
+        I Build Systems<br>
+        <span class="title-gradient">That Replace Manual Work</span>
+    </h1>
+
+    <p class="text-slate-400 text-xl leading-relaxed">
+        Internal platforms. Automation. Real software — not presentation websites.
+    </p>
+</section>
+
+<!-- PACKAGES -->
+<section class="py-28 bg-slate-950 border-y border-slate-800">
+
+    <div class="text-center mb-20">
+        <h2 class="text-5xl font-bold">Service Packages</h2>
+        <p class="text-slate-400 mt-4">Choose the level of system your business actually needs.</p>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- STARTER -->
+        <div class="glass p-10 rounded-2xl card">
+            <h3 class="text-2xl font-semibold mb-4">Django Starter – 3 Responsive Pages</h3>
+            <p class="text-slate-400 mb-6">
+                Build a clean Django application with core structure and responsive UI.
+            </p>
+
+            <ul class="space-y-2 text-sm text-slate-300">
+                <li>✔ Functional website</li>
+                <li>✔ 3 Pages</li>
+                <li>✔ Content upload</li>
+                <li>✔ 1 plugin/extension</li>
+                <li>✔ Opt-in form</li>
+                <li>✔ Social media icons</li>
+            </ul>
+
+            <div class="mt-6 text-sm text-slate-400">
+                <p>Delivery Time: 5 Days</p>
+                <p>Revisions: 2</p>
+            </div>
+
+            <p class="text-3xl font-bold mt-8">€45</p>
+        </div>
+
+        <!-- BUSINESS -->
+        <div class="glass p-10 rounded-2xl card">
+            <h3 class="text-2xl font-semibold mb-4">Business Logic / Dashboard Pro</h3>
+            <p class="text-slate-400 mb-6">
+                Multi-page web application with advanced logic, dashboards, and workflows.
+            </p>
+
+            <ul class="space-y-2 text-sm text-slate-300">
+                <li>✔ Functional web app</li>
+                <li>✔ 5 Pages</li>
+                <li>✔ Charts & reporting</li>
+                <li>✔ Booking or workflow system</li>
+                <li>✔ 3 plugins/extensions</li>
+                <li>✔ Autoresponder integration</li>
+            </ul>
+
+            <div class="mt-6 text-sm text-slate-400">
+                <p>Delivery Time: 10 Days</p>
+                <p>Revisions: 4</p>
+            </div>
+
+            <p class="text-3xl font-bold mt-8">€85</p>
+        </div>
+
+        <!-- SAAS -->
+        <div class="glass p-10 rounded-2xl card">
+            <h3 class="text-2xl font-semibold mb-4">Full Marketplace / Custom SaaS</h3>
+            <p class="text-slate-400 mb-6">
+                Complete scalable platform with payments and complex dashboards.
+            </p>
+
+            <ul class="space-y-2 text-sm text-slate-300">
+                <li>✔ 10 Pages platform</li>
+                <li>✔ E-commerce functionality</li>
+                <li>✔ 20 Products setup</li>
+                <li>✔ Payment Integration (Stripe)</li>
+                <li>✔ Modular architecture</li>
+                <li>✔ Admin + User dashboards</li>
+            </ul>
+
+            <div class="mt-6 text-sm text-slate-400">
+                <p>Delivery Time: 14 Days</p>
+                <p>Revisions: 6</p>
+            </div>
+
+            <p class="text-3xl font-bold mt-8">€140</p>
+        </div>
+
+        <!-- BDD -->
+        <div class="glass p-10 rounded-2xl card">
+            <h3 class="text-2xl font-semibold mb-4">BDD Automation Framework</h3>
+            <p class="text-slate-400 mb-6">
+                Automated testing system using Behavior-Driven Development to validate real user flows.
+            </p>
+
+            <ul class="space-y-2 text-sm text-slate-300">
+                <li>✔ Pytest + BDD setup</li>
+                <li>✔ Page Object Model</li>
+                <li>✔ Automated login & catalog testing</li>
+                <li>✔ HTML Reports</li>
+                <li>✔ CI/CD Ready</li>
+                <li>✔ Documentation included</li>
+            </ul>
+
+            <div class="mt-6 text-sm text-slate-400">
+                <p>Delivery Time: 7 Days</p>
+                <p>Revisions: 3</p>
+            </div>
+
+            <p class="text-3xl font-bold mt-8">€30S</p>
+        </div>
+
+    </div>
+
+    <!-- EXTRA COSTS -->
+<section class="py-24 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <h2 class="text-3xl font-bold mb-6">
+            Infrastructure Costs <span class="text-slate-500">(Not Included)</span>
+        </h2>
+
+        <p class="text-slate-400 mb-10">
+            Domain, hosting, and deployment are billed separately because they depend
+            on provider, traffic requirements, and scaling strategy.
+        </p>
+
+        <div class="glass p-8 rounded-2xl inline-block text-left">
+            <div class="space-y-3 text-slate-300 text-sm">
+                <p>• Domain registration: <strong>~€10–15 / year</strong></p>
+                <p>• Cloud hosting (Render / VPS): <strong>~€7–25 / month</strong></p>
+                <p>• Production deployment & configuration: <strong>€25 one-time setup</strong></p>
+            </div>
+        </div>
+
+        <p class="text-xs text-slate-500 mt-6">
+            Final infrastructure cost is always approved with the client before deployment.
+        </p>
+
+    </div>
+</section>
+
+
+<footer class="py-10 text-center text-slate-500 text-sm">
+    © 2026 Andreea Sandu — Systems Development
+</footer>
+
+</body>
+</html>
